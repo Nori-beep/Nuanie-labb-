@@ -17,10 +17,10 @@
                 extend: {
                     colors: {
                         brand: {
-                            light: '#FFF0F5',
-                            base: '#FF69B4',
-                            dark: '#1A1A1A',
-                            accent: '#FF1493',
+                            light: '#FFF5FA',
+                            base: '#F361B1',
+                            dark: '#393250',
+                            accent: '#F361B1',
                             white: 'rgba(255, 255, 255, 0.9)'
                         }
                     }
@@ -33,16 +33,16 @@
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, section, footer, header, nav, button {
             font-family: 'Mitr', sans-serif !important;
-            color: #1A1A1A;
+            color: #393250;
         }
         .font-eng { font-family: 'Fredoka', sans-serif !important; }
         
         body {
-            background-color: #FFF0F5;
+            background-color: #FFF5FA;
             background-image: 
                 radial-gradient(at 10% 0%, #FFFFFF 0px, transparent 50%),
-                radial-gradient(at 90% 10%, #FFB6C1 0px, transparent 50%),
-                radial-gradient(at 50% 90%, #FF69B4 0px, transparent 50%);
+                radial-gradient(at 90% 10%, #FDE7F3 0px, transparent 50%),
+                radial-gradient(at 50% 90%, #F361B1 0px, transparent 50%);
             background-attachment: fixed;
             min-height: 100vh;
             overflow-x: hidden;
@@ -53,7 +53,7 @@
         .emoji-petal {
             position: fixed;
             top: -50px;
-            z-index: 0; /* อยู่หลังเนื้อหาหลัก */
+            z-index: 0; 
             user-select: none;
             pointer-events: none;
             animation: fall linear forwards;
@@ -63,7 +63,6 @@
             0% { transform: translateY(0) rotate(0deg); opacity: 1; }
             100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
         }
-        /* --------------------------- */
         
         ::-webkit-scrollbar { width: 0px; background: transparent; }
         .container-box { max-width: 500px; margin: 0 auto; padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem; position: relative; z-index: 10; }
@@ -71,14 +70,14 @@
         .bento-card {
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 105, 180, 0.2);
+            border: 1px solid rgba(243, 97, 177, 0.2);
             border-radius: 1.5rem; padding: 1.5rem;
-            box-shadow: 0 4px 30px rgba(26, 26, 26, 0.03);
+            box-shadow: 0 4px 30px rgba(57, 50, 80, 0.03);
         }
         
         .floating-nav {
             position: sticky; top: 1rem; z-index: 50;
-            background: rgba(26, 26, 26, 0.9);
+            background: rgba(57, 50, 80, 0.95);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 999px; padding: 0.5rem 1rem;
@@ -94,27 +93,27 @@
             border-radius: 2rem;
             padding: 1.5rem;
             text-align: center;
-            border: 1px solid rgba(255, 105, 180, 0.15);
+            border: 1px solid rgba(243, 97, 177, 0.15);
         }
         .work-list-header { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem; }
-        .work-list-title { font-size: 1.2rem; font-weight: 700; color: #FF1493; }
-        .work-list-subtitle { font-size: 0.75rem; color: #FF69B4; opacity: 0.9; margin-bottom: 1.2rem; }
+        .work-list-title { font-size: 1.2rem; font-weight: 700; color: #F361B1; }
+        .work-list-subtitle { font-size: 0.75rem; color: #F361B1; opacity: 0.9; margin-bottom: 1.2rem; }
         
         .work-item-btn {
             background: white; border-radius: 1.2rem; padding: 0.75rem 1rem;
             display: flex; align-items: center; justify-content: space-between;
             margin-bottom: 0.75rem; text-decoration: none;
-            box-shadow: 0 2px 10px rgba(26, 26, 26, 0.03);
-            transition: transform 0.2s; border: 1px solid rgba(255, 105, 180, 0.1);
+            box-shadow: 0 2px 10px rgba(57, 50, 80, 0.03);
+            transition: transform 0.2s; border: 1px solid rgba(243, 97, 177, 0.1);
         }
         .work-item-btn:active { transform: scale(0.98); }
         .work-item-info { display: flex; align-items: center; gap: 0.75rem; }
         .work-item-icon { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-        .work-item-text { font-weight: 600; font-size: 0.95rem; color: #1A1A1A; }
+        .work-item-text { font-weight: 600; font-size: 0.95rem; color: #393250; }
         .arrow-icon { color: #D3D3D3; }
 
         .status-container {
-            background: rgba(26, 26, 26, 0.95);
+            background: rgba(57, 50, 80, 0.95);
             border-radius: 1.5rem; padding: 1.2rem; text-align: center;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
@@ -125,20 +124,20 @@
             background: rgba(255, 255, 255, 0.1); padding: 0.2rem 0.6rem; border-radius: 0.5rem;
         }
         .status-dashed-link {
-            border: 1.5px dashed #FF69B4; border-radius: 1rem; padding: 1rem;
+            border: 1.5px dashed #F361B1; border-radius: 1rem; padding: 1rem;
             display: flex; align-items: center; justify-content: center; gap: 0.6rem;
             text-decoration: none; background: rgba(255, 255, 255, 0.05);
         }
-        .status-footer-text { font-size: 0.75rem; color: #FFB6C1 !important; opacity: 0.9; margin-top: 0.6rem; }
+        .status-footer-text { font-size: 0.75rem; color: #FDE7F3 !important; opacity: 0.9; margin-top: 0.6rem; }
         
         .tos-container {
             background: rgba(255, 255, 255, 0.85); border-radius: 2rem; padding: 1.5rem;
-            border: 1px solid rgba(255, 105, 180, 0.15);
+            border: 1px solid rgba(243, 97, 177, 0.15);
         }
-        .tos-header span { color: #FF69B4 !important; }
-        .tos-item { display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.85rem; color: #1A1A1A; line-height: 1.5; }
-        .tos-icon { color: #FFB6C1; flex-shrink: 0; margin-top: 2px; }
-        .tos-sub { font-size: 0.75rem; color: #FF1493 !important; font-weight: 500; display: block; margin-top: 2px; }
+        .tos-header span { color: #F361B1 !important; }
+        .tos-item { display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.85rem; color: #393250; line-height: 1.5; }
+        .tos-icon { color: #F361B1; flex-shrink: 0; margin-top: 2px; }
+        .tos-sub { font-size: 0.75rem; color: #F361B1 !important; font-weight: 500; display: block; margin-top: 2px; }
     </style>
 </head>
 <body>
@@ -148,7 +147,7 @@
             <div class="flex gap-2 font-eng text-sm">
                 <a href="#work" class="px-3 py-1.5 rounded-full hover:bg-white/10 transition font-medium">Work</a>
                 <a href="#price" class="px-3 py-1.5 rounded-full hover:bg-white/10 transition font-medium">Price</a>
-                <a href="#contact" class="px-3 py-1.5 bg-brand-accent text-white rounded-full font-medium shadow-sm">Contact</a>
+                <a href="#contact" class="px-3 py-1.5 bg-brand-base text-white rounded-full font-medium shadow-sm">Contact</a>
             </div>
         </nav>
 
@@ -159,19 +158,22 @@
                 <div class="w-2 h-2 rounded-full bg-green-400"></div>
             </div>
             <div class="relative z-10">
-                <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-[3px] border-brand-accent shadow-sm bg-white flex items-center justify-center">
+                <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-[3px] border-brand-base shadow-sm bg-white flex items-center justify-center">
                     <img src="https://i.postimg.cc/Xq4CB5Wd/IMG-3494.png" alt="Nuania Logo" class="w-full h-full object-cover">
                 </div>
-                <div class="inline-flex items-center justify-center gap-2 bg-brand-accent px-4 py-1.5 rounded-full text-xs font-medium border border-white/20 mb-4 shadow-sm">
+                <div class="inline-flex items-center justify-center gap-2 bg-brand-base px-4 py-1.5 rounded-full text-xs font-medium border border-white/20 mb-4 shadow-sm">
                     <span class="relative flex h-2 w-2">
                       <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
                       <span class="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
                     </span>
                     <span style="color: #FFFFFF !important;">ยินดีต้อนรับสู่ร้านของนัวนัว</span>
                 </div>
-                <h1 class="font-eng text-[2.2rem] leading-[1.1] font-bold mb-1 tracking-tight" style="color: #1A1A1A !important;">Nuania labb</h1>
-                <p class="font-eng text-lg font-semibold mb-4 tracking-widest uppercase" style="color: #FF69B4 !important;">Design Studio</p>
-                <p class="text-sm leading-relaxed max-w-[280px] mx-auto" style="color: #404040 !important;">สอบถามสั่งงาน ทักได้เลยค้าบ<br>ทางร้านออกแบบจัดวางให้ฟรี</p>
+                <h1 class="font-eng text-[2.2rem] leading-[1.1] font-bold mb-1 tracking-tight" style="color: #393250 !important;">Nuania labb</h1>
+                <p class="font-eng text-lg font-semibold mb-4 tracking-widest uppercase" style="color: #F361B1 !important;">Design Studio</p>
+                <p class="text-sm leading-relaxed max-w-[280px] mx-auto" style="color: #393250 !important; opacity: 0.8;">
+                    สอบถามสั่งงานได้เลยค่า<br>
+                    ราคาแต่ละแนวไม่เท่ากัน เริ่มต้น 99.-
+                </p>
             </div>
         </header>
 
@@ -191,49 +193,49 @@
 
         <div id="work" class="work-list-container bento-card">
             <div class="work-list-header">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF1493" stroke-width="2.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F361B1" stroke-width="2.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
                 <h2 class="work-list-title">ตัวอย่างผลงาน</h2>
             </div>
             <p class="work-list-subtitle">คลิกดูตัวอย่างงานในไดร์ฟ</p>
             <div class="space-y-3">
                 <a href="https://drive.google.com/drive/folders/111HWgVcBq93HDEgg5ZNfSUqNKo5n4E1a" target="_blank" class="work-item-btn">
                     <div class="work-item-info">
-                        <div class="work-item-icon bg-[#1A1A1A]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFB6C1" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
+                        <div class="work-item-icon bg-[#393250]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FDE7F3" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
                         <span class="work-item-text">แนวท้องฟ้า</span>
                     </div>
                     <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
                 </a>
                 <a href="https://drive.google.com/drive/folders/1UEoPEmVaXAcEdfP7qqM7CLzvFmOgp31n" target="_blank" class="work-item-btn">
                     <div class="work-item-info">
-                        <div class="work-item-icon bg-[#FF69B4]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></div>
+                        <div class="work-item-icon bg-[#F361B1]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></div>
                         <span class="work-item-text">แนวมืด</span>
                     </div>
                     <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
                 </a>
                 <a href="https://drive.google.com/drive/folders/1Do47CEKwJjx1z8oQ_p0QoQcF0TD81pRV" target="_blank" class="work-item-btn">
                     <div class="work-item-info">
-                        <div class="work-item-icon bg-[#FFF0F5]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF1493" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.6-.5 1.9-1.3.3-.8.1-1.7-.6-2.4-.5-.5-.8-1.2-.8-2 0-1.7 1.3-3 3-3 .8 0 1.5.3 2 .8.7.7 1.6.9 2.4.6.8-.3 1.3-1 1.3-1.9 0-5.5-4.5-10-10-10z"/></svg></div>
+                        <div class="work-item-icon bg-[#FFF5FA]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F361B1" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.6-.5 1.9-1.3.3-.8.1-1.7-.6-2.4-.5-.5-.8-1.2-.8-2 0-1.7 1.3-3 3-3 .8 0 1.5.3 2 .8.7.7 1.6.9 2.4.6.8-.3 1.3-1 1.3-1.9 0-5.5-4.5-10-10-10z"/></svg></div>
                         <span class="work-item-text">แนว circle</span>
                     </div>
                     <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
                 </a>
                 <a href="https://drive.google.com/drive/folders/1UgIf9JPFphit1Z4sChV6IlO1VR4iya2Q" target="_blank" class="work-item-btn">
                     <div class="work-item-info">
-                        <div class="work-item-icon bg-[#1A1A1A]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFB6C1" stroke-width="2"><path d="M9 11L12 14L22 4"/><path d="M21 12V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+                        <div class="work-item-icon bg-[#393250]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FDE7F3" stroke-width="2"><path d="M9 11L12 14L22 4"/><path d="M21 12V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
                         <span class="work-item-text">แนวน้องกระต่าย</span>
                     </div>
                     <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
                 </a>
                 <a href="https://drive.google.com/drive/folders/1JtmWnctAtktVtiPqeYnAVWLK4LPLcLq_" target="_blank" class="work-item-btn">
                     <div class="work-item-info">
-                        <div class="work-item-icon bg-[#FF69B4]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg></div>
+                        <div class="work-item-icon bg-[#F361B1]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg></div>
                         <span class="work-item-text">แนวเพิลเวฟ</span>
                     </div>
                     <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
                 </a>
                 <a href="https://drive.google.com/drive/folders/1-2XPqYceKPlutG1PfbDVJ3ZsZsctE-ys" target="_blank" class="work-item-btn">
                     <div class="work-item-info">
-                        <div class="work-item-icon bg-[#FFF0F5]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF1493" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+                        <div class="work-item-icon bg-[#FFF5FA]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F361B1" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
                         <span class="work-item-text">เลือกตูน</span>
                     </div>
                     <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
@@ -242,69 +244,62 @@
         </div>
 
         <div class="grid grid-cols-2 gap-4">
-            <div class="bento-card flex flex-col items-center text-center p-5 bg-brand-accent/90">
+            <div class="bento-card flex flex-col items-center text-center p-5 bg-brand-base">
                 <p class="font-eng text-[10px] font-bold uppercase mb-1" style="color: #FFFFFF !important;">เร่งปกติ</p>
                 <div class="flex items-baseline gap-1 mb-1">
                     <span class="text-3xl font-bold" style="color: #FFFFFF !important;">+50</span><span class="text-xs font-medium" style="color: #FFFFFF !important;">.-</span>
                 </div>
                 <p class="text-[10px] bg-white/20 px-2 py-1 rounded-full" style="color: #FFFFFF !important;">รอ 1 วัน</p>
             </div>
-            <div class="bento-card flex flex-col items-center text-center p-5 bg-brand-dark">
-                <p class="font-eng text-[10px] font-bold uppercase mb-1" style="color: #FFB6C1 !important;">เร่งปุ๊ด</p>
+            <div class="bento-card flex flex-col items-center text-center p-5 bg-[#393250]">
+                <p class="font-eng text-[10px] font-bold uppercase mb-1" style="color: #FDE7F3 !important;">เร่งปุ๊ด</p>
                 <div class="flex items-baseline gap-1 mb-1">
-                    <span class="text-3xl font-bold" style="color: #FF69B4 !important;">+100</span><span class="text-xs font-medium" style="color: #FF69B4 !important;">.-</span>
+                    <span class="text-3xl font-bold" style="color: #F361B1 !important;">+100</span><span class="text-xs font-medium" style="color: #F361B1 !important;">.-</span>
                 </div>
-                <p class="text-[10px] bg-white/10 px-2 py-1 rounded-full" style="color: #FFB6C1 !important;">รอ 5-6 ชม.</p>
+                <p class="text-[10px] bg-white/10 px-2 py-1 rounded-full" style="color: #FDE7F3 !important;">รอ 5-6 ชม.</p>
             </div>
         </div>
 
         <div id="price" class="tos-container shadow-sm">
             <div class="tos-header">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFB6C1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F361B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
                 <span class="font-eng font-bold text-xs tracking-wide">—·˚.˳✧ Term of service ✧˳.·—</span>
             </div>
-            <div class="tos-list">
-                <div class="tos-item"><svg style="color: #1A1A1A !important;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>บรีฟก่อนโอนทุกครั้ง</span></div>
-                <div class="tos-item"><svg style="color: #1A1A1A !important;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div><span>งานเร่ง x2 (ได้รับงานภายใน 1-2 ชั่วโมง)</span><span class="tos-sub">ตัดคิว +30.- / งาน</span></div></div>
-                <div class="tos-item"><svg style="color: #1A1A1A !important;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>ไม่รับทำงานตามร้านอื่นทุกกรณี</span></div>
-                <div class="tos-item"><svg style="color: #1A1A1A !important;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>กรณีเขียนบรีฟ ต้องเป็นบรีฟของตัวเองเท่านั้น</span></div>
-                <div class="tos-item"><svg style="color: #1A1A1A !important;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>ยกเลิกงาน หัก 50% กรณีเริ่มงานแล้วไม่คืนเงิน</span></div>
-                <div class="tos-item"><svg style="color: #1A1A1A !important;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>ไม่รับแก้งานหลังส่งงานทุกกรณี (ยกเว้นความผิดของร้าน)</span></div>
+            <div class="tos-list mt-4 space-y-3">
+                <div class="tos-item"><svg class="tos-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>บรีฟก่อนโอนทุกครั้ง</span></div>
+                <div class="tos-item"><svg class="tos-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>ไม่รับทำงานตามร้านอื่นทุกกรณี</span></div>
+                <div class="tos-item"><svg class="tos-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>กรณีเขียนบรีฟ ต้องเป็นบรีฟของตัวเองเท่านั้น</span></div>
+                <div class="tos-item"><svg class="tos-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>ยกเลิกงาน หัก 50% กรณีเริ่มงานแล้วไม่คืนเงิน</span></div>
+                <div class="tos-item"><svg class="tos-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>ไม่รับแก้งานหลังส่งงานทุกกรณี (ยกเว้นความผิดของร้าน)</span></div>
             </div>
         </div>
 
         <div id="contact" class="grid grid-cols-2 gap-3 mb-6">
-            <a href="https://www.facebook.com/nuania.reiss?" target="_blank" class="bento-card p-3 flex flex-col items-center gap-2 bg-brand-dark hover:bg-black transition shadow-sm border-none"><span class="font-eng text-xs font-semibold" style="color: #FFFFFF !important;">Facebook</span></a>
-            <a href="https://lin.ee/6i1C9tC" target="_blank" class="bento-card p-3 flex flex-col items-center gap-2 bg-brand-accent hover:bg-brand-accent/90 transition shadow-sm border-none"><span class="font-eng text-xs font-semibold" style="color: #1A1A1A !important;">Line</span></a>
+            <a href="https://www.facebook.com/nuania.reiss?" target="_blank" class="bento-card p-3 flex flex-col items-center gap-2 bg-[#393250] hover:bg-opacity-90 transition shadow-sm border-none"><span class="font-eng text-xs font-semibold" style="color: #FFFFFF !important;">Facebook</span></a>
+            <a href="https://lin.ee/6i1C9tC" target="_blank" class="bento-card p-3 flex flex-col items-center gap-2 bg-brand-base hover:bg-opacity-90 transition shadow-sm border-none"><span class="font-eng text-xs font-semibold" style="color: #FFFFFF !important;">Line</span></a>
         </div>
-        <footer class="text-center text-[10px] font-eng pb-6 uppercase tracking-widest" style="color: #1A1A1A; opacity: 0.6;">&copy; 2026 Nuania labb Studio.</footer>
+        <footer class="text-center text-[10px] font-eng pb-6 uppercase tracking-widest" style="color: #393250; opacity: 0.6;">&copy; 2026 Nuania labb Studio.</footer>
     </div>
 
     <script>
         function createEmoji() {
-            const emojis = ['🩷', '🖤'];
+            const emojis = ['🐈‍⬛', '💌'];
             const emoji = document.createElement('div');
             emoji.className = 'emoji-petal';
             emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
             
-            // สุ่มตำแหน่งเริ่มต้น (ซ้ายไปขวา)
             emoji.style.left = Math.random() * 100 + 'vw';
-            // สุ่มขนาด
             emoji.style.fontSize = Math.random() * 20 + 10 + 'px';
-            // สุ่มความเร็ว (ร่วงช้าๆ เหมือนดอกไม้)
             emoji.style.animationDuration = Math.random() * 3 + 5 + 's';
-            // สุ่มความโปร่งใส
             emoji.style.opacity = Math.random() * 0.5 + 0.3;
 
             document.body.appendChild(emoji);
 
-            // ลบเมื่อร่วงจบ
             setTimeout(() => {
                 emoji.remove();
             }, 8000);
         }
 
-        // สร้างอิโมจิทุกๆ 500ms
         setInterval(createEmoji, 500);
     </script>
 </body>
